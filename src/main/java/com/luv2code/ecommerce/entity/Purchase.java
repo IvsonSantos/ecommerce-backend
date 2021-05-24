@@ -1,7 +1,10 @@
 package com.luv2code.ecommerce.entity;
 
+import lombok.Data;
+
 import java.util.Set;
 
+@Data
 public class Purchase {
 
     private Customer customer;
@@ -12,6 +15,6 @@ public class Purchase {
 
     private Order order;
 
-    private Set<OrderItem> orderItem;
+    private Set<OrderItem> orderItems;
 
 }
